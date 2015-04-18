@@ -3,15 +3,25 @@ import java.io.*;
 public class Gcj {
   private int T;
   private BufferedReader buff;
+  final static private boolean IS_DEBUG=true;
 
   private void read_args(){
     try{
       buff.readLine();
+      // INIT VARIABLES HERE
+
     }
     catch(Exception e){
       System.err.println(e);
     }
     return;
+  }
+
+  private void debugInfo(String message){
+    if(IS_DEBUG){
+      System.out.println("debug: "+message);
+      System.out.format("       "+"variable=\n");
+    }
   }
 
   private void solve(){
