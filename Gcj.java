@@ -7,8 +7,8 @@ public class Gcj {
 
   private void read_args(){
     try{
-      buff.readLine();
       // INIT VARIABLES HERE
+      buff.readLine();
 
     }
     catch(Exception e){
