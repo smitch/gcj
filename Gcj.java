@@ -4,6 +4,7 @@ public class Gcj {
   private int T;
   private BufferedReader buff;
   final static private boolean IS_DEBUG=true;
+  // final static private boolean IS_DEBUG=false;
 
   private void read_args(){
     try{
@@ -19,8 +20,7 @@ public class Gcj {
 
   private void debugInfo(String message){
     if(IS_DEBUG){
-      System.out.println("debug: "+message);
-      System.out.format("       "+"variable=\n");
+      System.err.println("debug: "+message);
     }
   }
 
